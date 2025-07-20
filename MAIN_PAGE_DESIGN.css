@@ -8,11 +8,6 @@ html {
     scroll-behavior: smooth;
 }
 
-img{
-    width: 100px;
-    height: 100px;
-}
-
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     line-height: 1.6;
