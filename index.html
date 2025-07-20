@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rajat Patil - Portfolio</title>
+    <meta name="description" content="Portfolio of Rajat Patil">
+    <link rel="stylesheet" href="MAIN_PAGE_DESIGN.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
             <a href="#home" class="logo">Rajat Patil</a>
@@ -15,16 +19,258 @@
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-bg">
-            <div class="hero-content">
-                <h1 class="hero-title">Hi, I'm<span class="hero-name">Rajat Patil</span></h1>
-                <p class="description">A passionate Computer science student currently exploring the world of<br />Full Stack Web Development, Data Science, & Machine Learning</p>
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Hi, I'm <span class="highlight">Rajat Patil</span></h1>
+            <p class="subtitle">Creative Developer & Designer</p>
+            <p class="description">I create beautiful, functional, and user-centered digital experiences that solve real-world problems.</p>
+            <div class="cta-buttons">
+                <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Passionate About Creating</h3>
+                    <p>I'm a creative professional with over 5 years of experience in web development and design. I specialize in creating modern, responsive websites and applications that provide exceptional user experiences.</p>
+                    <p>My approach combines technical expertise with creative problem-solving to deliver solutions that not only look great but also perform flawlessly across all devices and platforms.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h4>0</h4>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h4>1</h4>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h4>--%</h4>
+                            <p>Client Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">Rajat Patil</div>
+                </div>
+            </div>
+            
+            <div class="skills">
+                <div class="skill-card">
+                    <div class="skill-icon">🎨</div>
+                    <h4>C Progamming Language</h4>
+                    <p>Creating intuitive and engaging user interfaces with focus on user experience and accessibility.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🎨</div>
+                    <h4>Python Progamming Language</h4>
+                    <p>Creating intuitive and engaging user interfaces with focus on user experience and accessibility.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🎨</div>
+                    <h4>Data Structure in C</h4>
+                    <p>Creating intuitive and engaging user interfaces with focus on user experience and accessibility.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h4>Frontend Development</h4>
+                    <p>Building responsive, interactive websites using modern frameworks and best practices.</p>
+                </div>
+                <!-- <div class="skill-card">
+                    <div class="skill-icon">⚡</div>
+                    <h4>Performance Optimization</h4>
+                    <p>Ensuring fast loading times and smooth user experiences across all devices.</p>
+                </div> -->
             </div>
         </div>
     </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">My Work</h2>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="app">Mobile Apps</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <!-- <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-commerce Platform</h3>
+                        <p>A modern e-commerce solution with advanced filtering, secure payments, and intuitive user experience.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-demo">Live Demo</a>
+                            <a href="#" class="project-code">View Code</a>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- <div class="project-card" data-category="app">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p>A productivity app with real-time collaboration, task tracking, and beautiful interface design.</p>
+                        <div class="project-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">UI/UX</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-demo">Live Demo</a>
+                            <a href="#" class="project-code">View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div> -->
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+                        <p>A responsive portfolio website showcasing creative work with smooth animations and modern design.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-demo">Live Demo</a>
+                            <a href="#" class="project-code">View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="branding">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Brand Identity Design</h3>
+                        <p>Complete brand identity package including logo, color scheme, and brand guidelines.</p>
+                        <div class="project-tags">
+                            <span class="tag">Adobe Illustrator</span>
+                            <span class="tag">Branding</span>
+                            <span class="tag">Logo Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-demo">View Case Study</a>
+                            <a href="#" class="project-code">Brand Guidelines</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Work Together</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <strong>Email:</strong>
+                                <p>rajatpatil0001@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <div>
+                                <strong>Phone:</strong>
+                                <p>+91 6361537049</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <strong>Location:</strong>
+                                <p>Hubli, Karnataka, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">GitHub</a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Rajat Patil. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
